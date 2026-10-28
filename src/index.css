@@ -1,0 +1,124 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg: #05070d;
+    --bg-card: #0b1220;
+    --border: rgba(255, 255, 255, 0.12);
+    --accent: #ff8a00;
+    --accent-light: #ffc247;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #05070d;
+    color: #f1f4fb;
+  }
+
+  h1, h2, h3, h4, .font-heading {
+    font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+  }
+}
+
+/* Keyframe Animations for Truck & Skyline */
+@keyframes wheelSpin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes roadDash {
+  from { transform: translateX(0); }
+  to { transform: translateX(-120px); }
+}
+
+@keyframes truckBob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+}
+
+@keyframes smokeRise {
+  0% { opacity: 0.6; transform: translate(0, 0) scale(0.5); }
+  100% { opacity: 0; transform: translate(-70px, -55px) scale(2.6); }
+}
+
+@keyframes speedStreak {
+  from { transform: translateX(100vw); }
+  to { transform: translateX(-40vw); }
+}
+
+@keyframes panLayer {
+  to { transform: translateX(-50%); }
+}
+
+.animate-wheel {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: wheelSpin 0.45s linear infinite;
+}
+
+.animate-wheel-fast {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: wheelSpin 0.25s linear infinite;
+}
+
+.animate-wheel-slow {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: wheelSpin 0.8s linear infinite;
+}
+
+.animate-road {
+  animation: roadDash 0.55s linear infinite;
+}
+
+.animate-truck {
+  animation: truckBob 1.2s ease-in-out infinite;
+}
+
+.animate-smoke-1 {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: smokeRise 2.2s ease-out infinite;
+}
+
+.animate-smoke-2 {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: smokeRise 2.2s ease-out 1.1s infinite;
+}
+
+.animate-pan-mountains {
+  animation: panLayer 65s linear infinite;
+}
+
+.animate-pan-city {
+  animation: panLayer 32s linear infinite;
+}
+
+.animate-pan-trees {
+  animation: panLayer 10s linear infinite;
+}
+
+.animate-speed-1 {
+  animation: speedStreak 1s linear infinite;
+}
+
+.animate-speed-2 {
+  animation: speedStreak 1.4s linear infinite 0.3s;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #05070d;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ff8a00;
+}

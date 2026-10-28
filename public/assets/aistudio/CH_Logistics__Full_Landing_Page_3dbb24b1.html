@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CH Logistics | Truck Dispatch Services in Georgia</title>
+<meta name="description" content="CH Logistics, Atlanta GA truck dispatch: better loads, better rates, faster pay.">
+<style>
+:root{--bg:#05070d;--bg2:#0b1220;--tx:#f1f4fb;--mut:#a3aec6;--ac:#ff8a00;--ac2:#ffc247;--line:rgba(255,255,255,.12);--card:rgba(255,255,255,.05);color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{background:var(--bg);color:var(--tx);font:17px/1.65 Inter,system-ui,-apple-system,Segoe UI,sans-serif;overflow-x:hidden}
+h1,h2,h3{font-family:"Space Grotesk",Sora,system-ui,sans-serif;line-height:1.08;letter-spacing:-.02em}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1140px;margin:auto;padding:0 20px}
+section{padding:96px 0}
+.grad{background:linear-gradient(90deg,var(--ac),var(--ac2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.tag{display:block;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--ac);margin-bottom:12px;font-weight:600}
+h2{font-size:clamp(30px,4.6vw,48px);margin-bottom:14px}
+.sub{color:var(--mut);max-width:580px}
+.btn{display:inline-block;padding:15px 30px;border-radius:999px;font:600 16px inherit;border:1px solid var(--line);color:var(--tx);background:rgba(255,255,255,.06);cursor:pointer;transition:.25s}
+.btn.p{background:linear-gradient(135deg,var(--ac),var(--ac2));color:#1a1000;border:0;box-shadow:0 10px 34px rgba(255,138,0,.4)}
+.btn:hover{transform:translateY(-3px)}
+nav{position:fixed;top:0;left:0;right:0;z-index:50;padding-top:env(safe-area-inset-top,0px);background:rgba(5,7,13,.78);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font:700 21px "Space Grotesk",sans-serif}.logo b{color:var(--ac)}
+nav ul{display:flex;gap:26px;list-style:none;font-size:15px;color:var(--mut)}nav ul a:hover{color:var(--tx)}
+nav .btn{padding:9px 20px;font-size:14px}
+@media(max-width:800px){nav ul{display:none}}
+/* HERO */
+.hero{position:relative;min-height:100svh;padding:120px 0 0;overflow:hidden;display:flex;flex-direction:column;background:linear-gradient(#070b18 0,#13213f 45%,#5a3a2a 78%,#ff8a3d 100%)}
+.hero .wrap{position:relative;z-index:5;text-align:center}
+.hero h1{font-size:clamp(40px,7.4vw,88px);margin:6px 0 18px;text-shadow:0 4px 30px rgba(0,0,0,.5)}
+.hero p{max-width:620px;margin:0 auto 28px;font-size:clamp(17px,2vw,20px);color:#dfe6f5}
+.cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.badges{display:flex;gap:10px 22px;justify-content:center;flex-wrap:wrap;margin-top:22px;font-size:14px;color:#cdd7ee}
+.stars{position:absolute;inset:0 0 40% 0;background-image:radial-gradient(1.5px 1.5px at 15% 25%,#fff 50%,transparent),radial-gradient(1px 1px at 55% 12%,#fff 50%,transparent),radial-gradient(1.5px 1.5px at 78% 35%,#fff 50%,transparent),radial-gradient(1px 1px at 35% 48%,#fff 50%,transparent),radial-gradient(1px 1px at 92% 8%,#fff 50%,transparent);background-size:340px 300px;animation:tw 5s infinite alternate}
+@keyframes tw{to{opacity:.35}}
+.sun{position:absolute;left:50%;bottom:90px;width:360px;height:360px;margin-left:-180px;border-radius:50%;background:radial-gradient(circle,#ffd08a 0,rgba(255,138,0,.55) 35%,transparent 68%);opacity:.8}
+.world{position:relative;flex:1;min-height:340px;margin-top:10px}
+.layer{position:absolute;left:0;bottom:60px;width:200%;display:flex;will-change:transform}
+.layer svg{width:50%;display:block;flex:none}
+.mt{height:170px;animation:pan 70s linear infinite}
+.ct{height:120px;animation:pan 32s linear infinite}
+.tr{height:70px;animation:pan 9s linear infinite;bottom:44px}
+@keyframes pan{to{transform:translateX(-50%)}}
+.road{position:absolute;left:0;right:0;bottom:0;height:66px;background:linear-gradient(#1a1e2b,#0a0c13);border-top:3px solid #3a4258}
+.road::before{content:"";position:absolute;left:0;right:0;top:30px;height:5px;background:repeating-linear-gradient(90deg,var(--ac2) 0 60px,transparent 60px 120px);animation:dash .55s linear infinite}
+@keyframes dash{to{transform:translateX(-120px)}}
+.heroTruck{position:absolute;left:50%;bottom:30px;width:min(780px,98vw);transform:translateX(-50%);overflow:visible;animation:bob 1.1s ease-in-out infinite;filter:drop-shadow(0 18px 22px rgba(0,0,0,.55))}
+@keyframes bob{50%{margin-bottom:3px}}
+.wheel{transform-box:fill-box;transform-origin:center;animation:spin .45s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.smoke{transform-box:fill-box;transform-origin:center;animation:sm 2s ease-out infinite;opacity:0}
+.smoke:nth-of-type(2){animation-delay:1s}
+@keyframes sm{0%{opacity:.5;transform:translate(0,0) scale(.5)}100%{opacity:0;transform:translate(-60px,-50px) scale(2.4)}}
+.speed{position:absolute;height:2px;width:140px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.6));animation:sl 1s linear infinite;opacity:.5}
+@keyframes sl{from{transform:translateX(110vw)}to{transform:translateX(-30vw)}}
+/* sections */
+.trust{background:var(--bg2);border-block:1px solid var(--line);padding:26px 0}
+.trust .wrap{display:flex;flex-wrap:wrap;gap:16px 46px;justify-content:center;color:var(--mut);font-size:15px}.trust b{color:var(--tx)}
+.grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin-top:44px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:30px;transition:.3s}
+.card:hover{transform:translateY(-6px);border-color:rgba(255,138,0,.6);box-shadow:0 20px 50px rgba(255,138,0,.12)}
+.ic{width:52px;height:52px;border-radius:15px;display:grid;place-items:center;font-size:24px;background:linear-gradient(135deg,rgba(255,138,0,.28),rgba(255,194,71,.08));margin-bottom:16px}
+.card h3{font-size:21px;margin-bottom:8px}.card p{color:var(--mut);font-size:16px}
+.alt{background:var(--bg2)}
+.two{display:grid;gap:34px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));margin-top:40px}
+.bad li::before{content:"✕ ";color:#ff5a5a}.good li::before{content:"✓ ";color:var(--ac2)}
+.card ul{list-style:none}.card li{padding:7px 0;color:var(--mut)}
+/* scroll-driven truck strip */
+.strip{position:relative;height:200px;margin-top:50px;overflow:hidden;border-radius:22px;background:linear-gradient(#0c1426,#17233f)}
+.strip .road{height:44px}.strip .road::before{top:20px}
+.stop{position:absolute;bottom:50px;width:90px;text-align:center;font-size:13px;color:var(--ac2);transform:translateX(-50%)}
+.stop i{display:block;margin:0 auto 6px;width:14px;height:14px;border-radius:50%;background:var(--ac);box-shadow:0 0 18px var(--ac)}
+#st{position:absolute;bottom:22px;left:0;width:300px;will-change:transform;overflow:visible}
+.num{font:700 52px "Space Grotesk";color:rgba(255,138,0,.4);line-height:1}
+.big{font:700 clamp(40px,6vw,64px) "Space Grotesk"}.center{text-align:center}
+.price{font:700 46px "Space Grotesk"}.price small{font-size:16px;color:var(--mut);font-weight:400}
+.feat{border-color:var(--ac);background:linear-gradient(160deg,rgba(255,138,0,.14),var(--card))}
+.q{font-size:17px;color:var(--tx)!important;margin-bottom:14px}
+.who{font-size:14px;color:var(--ac2)}
+details{border-bottom:1px solid var(--line);padding:20px 0}
+summary{cursor:pointer;font:600 19px "Space Grotesk";list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::after{content:"+";color:var(--ac);font-size:26px;line-height:1}details[open] summary::after{content:"–"}
+details p{color:var(--mut);margin-top:10px}
+.box{background:linear-gradient(135deg,#1c1306,var(--bg2));border:1px solid rgba(255,138,0,.4);border-radius:30px;padding:clamp(26px,5vw,60px);display:grid;gap:36px;grid-template-columns:repeat(auto-fit,minmax(290px,1fr))}
+form{display:grid;gap:12px}
+input,select{width:100%;padding:15px 16px;border-radius:12px;border:1px solid var(--line);background:rgba(255,255,255,.06);color:var(--tx);font:inherit}
+input:focus,select:focus{outline:2px solid var(--ac);border-color:transparent}select option{background:#0b1220}
+#ok{display:none;color:var(--ac2)}
+footer{padding:40px 0 100px;border-top:1px solid var(--line);color:var(--mut);font-size:15px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:16px 30px;justify-content:space-between}
+.float{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:60;display:flex;flex-direction:column;gap:10px}
+.float a{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;font-size:23px;box-shadow:0 8px 24px rgba(0,0,0,.5)}
+.rv{opacity:0;transform:translateY(32px);transition:.8s}.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+@media(max-width:600px){section{padding:70px 0}.sun{width:240px;height:240px;margin-left:-120px}.strip{height:170px}#st{width:230px}}
+</style></head>
+<body>
+<!-- shared truck artwork (faces right) -->
+<svg width="0" height="0" style="position:absolute"><defs>
+<linearGradient id="trl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fafcff"/><stop offset="1" stop-color="#aab5c9"/></linearGradient>
+<linearGradient id="cab" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffa62b"/><stop offset="1" stop-color="#d45a00"/></linearGradient>
+<linearGradient id="chr" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff"/><stop offset=".5" stop-color="#9aa4b8"/><stop offset="1" stop-color="#e8edf6"/></linearGradient>
+<linearGradient id="gl" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#27406e"/><stop offset="1" stop-color="#08101f"/></linearGradient>
+<linearGradient id="bm" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff0b8" stop-opacity=".7"/><stop offset="1" stop-color="#fff0b8" stop-opacity="0"/></linearGradient>
+<g id="wh"><circle r="28" fill="#0b0c10"/><circle r="17" fill="url(#chr)"/><circle r="6" fill="#333"/><g fill="#222"><circle cy="-11" r="2.6"/><circle cy="11" r="2.6"/><circle cx="-11" r="2.6"/><circle cx="11" r="2.6"/></g></g>
+<g id="tk">
+<polygon points="708,116 1180,40 1180,220 708,136" fill="url(#bm)"/>
+<rect x="10" y="26" width="470" height="146" rx="7" fill="url(#trl)"/>
+<rect x="10" y="112" width="470" height="14" fill="#12203d"/><rect x="10" y="126" width="470" height="5" fill="#ff8a00"/>
+<text x="245" y="86" text-anchor="middle" font-family="Space Grotesk,Arial" font-weight="700" font-size="56" fill="#12203d">CH <tspan fill="#ff8a00">LOGISTICS</tspan></text>
+<text x="245" y="104" text-anchor="middle" font-family="Arial" font-size="12" letter-spacing="5" fill="#4a5875">GEORGIA · NATIONWIDE DISPATCH</text>
+<rect x="30" y="172" width="430" height="12" fill="#161b27"/><rect x="2" y="138" width="8" height="18" rx="2" fill="#ff2a2a"/>
+<rect x="476" y="152" width="22" height="22" fill="#1a1d27"/>
+<path d="M494 174V60Q494 42 514 42H578Q591 42 599 54L613 78V174Z" fill="url(#cab)"/>
+<path d="M508 42L558 14Q582 10 592 24L594 44Z" fill="#c25200"/>
+<path d="M556 58H588L606 82H556Z" fill="url(#gl)"/><rect x="522" y="92" width="62" height="70" rx="5" fill="none" stroke="rgba(0,0,0,.3)" stroke-width="2"/><rect x="528" y="104" width="14" height="4" rx="2" fill="url(#chr)"/>
+<path d="M613 174V112Q613 101 626 101H692Q704 101 708 114L712 174Z" fill="url(#cab)"/>
+<rect x="692" y="106" width="16" height="58" rx="3" fill="url(#chr)"/><g stroke="#333" stroke-width="1.5"><path d="M696 110v50M700 110v50M704 110v50"/></g>
+<rect x="702" y="119" width="12" height="12" rx="3" fill="#fff6d0"/><rect x="690" y="162" width="32" height="12" rx="5" fill="url(#chr)"/>
+<rect x="598" y="6" width="8" height="98" rx="3" fill="url(#chr)"/><rect x="500" y="176" width="92" height="22" rx="11" fill="url(#chr)"/>
+<circle class="smoke" cx="602" cy="6" r="10" fill="#cfd6e4"/><circle class="smoke" cx="602" cy="6" r="10" fill="#cfd6e4"/>
+<g transform="translate(90 172)"><g class="wheel"><use href="#wh"/></g></g><g transform="translate(154 172)"><g class="wheel"><use href="#wh"/></g></g>
+<g transform="translate(528 172)"><g class="wheel"><use href="#wh"/></g></g><g transform="translate(586 172)"><g class="wheel"><use href="#wh"/></g></g>
+<g transform="translate(662 172)"><g class="wheel"><use href="#wh"/></g></g>
+</g></defs></svg>
+
+<nav><div class="wrap"><a class="logo" href="#">CH <b>Logistics</b></a>
+<ul><li><a href="#services">Services</a></li><li><a href="#how">How it works</a></li><li><a href="#pricing">Pricing</a></li><li><a href="#faq">FAQ</a></li></ul>
+<a class="btn p" href="tel:+10000000000">Call Now</a></div></nav>
+
+<header class="hero">
+<div class="stars"></div><div class="sun"></div>
+<div class="wrap"><span class="tag">Atlanta, Georgia · Truck Dispatch</span>
+<h1>More Miles.<br><span class="grad">Better Rates.</span> Zero Hassle.</h1>
+<p>We find high-paying loads, negotiate every rate and handle the paperwork, so you can focus on the road.</p>
+<div class="cta"><a class="btn p" href="#contact">Get Started Free</a><a class="btn" href="tel:+10000000000">📞 Call Now</a></div>
+<div class="badges"><span>✓ No long-term contract</span><span>✓ 24/7 dispatch</span><span>✓ Georgia based</span></div></div>
+<div class="world">
+<svg class="layer mt" viewBox="0 0 2400 170" preserveAspectRatio="none" style="display:block;width:200%"><g fill="#1a2547" opacity=".85"><path id="m1" d="M0 170V110L120 60 220 105 360 40 520 115 640 70 800 120 960 55 1100 110 1200 80V170Z"/><use href="#m1" x="1200"/></g></svg>
+<div class="layer ct"><svg viewBox="0 0 1200 120" preserveAspectRatio="none"><g fill="#0e1630"><path id="c1" d="M0 120V60h40V30h50v40h30V20h60v50h40V45h50v75h30V35h60v85h40V55h40V25h50v95h40V50h60V70h50v50h50V40h60v80h40V60h50v60h40V30h50v90h60V70h40v50Z"/></g><g fill="#ffc247" opacity=".7"><rect x="60" y="45" width="4" height="4"/><rect x="170" y="35" width="4" height="4"/><rect x="330" y="70" width="4" height="4"/><rect x="520" y="45" width="4" height="4"/><rect x="760" y="60" width="4" height="4"/><rect x="980" y="50" width="4" height="4"/></g></svg><svg viewBox="0 0 1200 120" preserveAspectRatio="none"><use href="#c1"/><g fill="#0e1630"><use href="#c1"/></g></svg></div>
+<div class="layer tr"><svg viewBox="0 0 1200 70" preserveAspectRatio="none"><g stroke="#0a0f1c" stroke-width="5"><path d="M100 70V8M400 70V8M700 70V8M1000 70V8"/></g><g fill="#ffd9a0"><circle cx="100" cy="8" r="6"/><circle cx="400" cy="8" r="6"/><circle cx="700" cy="8" r="6"/><circle cx="1000" cy="8" r="6"/></g></svg><svg viewBox="0 0 1200 70" preserveAspectRatio="none"><g stroke="#0a0f1c" stroke-width="5"><path d="M100 70V8M400 70V8M700 70V8M1000 70V8"/></g><g fill="#ffd9a0"><circle cx="100" cy="8" r="6"/><circle cx="400" cy="8" r="6"/><circle cx="700" cy="8" r="6"/><circle cx="1000" cy="8" r="6"/></g></svg></div>
+<div class="road"></div>
+<div class="speed" style="bottom:130px;animation-duration:.9s"></div><div class="speed" style="bottom:90px;animation-delay:.4s"></div><div class="speed" style="bottom:50px;animation-duration:.7s;animation-delay:.2s"></div>
+<svg class="heroTruck" viewBox="0 0 740 202" role="img" aria-label="CH Logistics truck driving"><use href="#tk"/></svg>
+</div></header>
+
+<div class="trust"><div class="wrap"><span><b>Based in Georgia</b> · serving carriers nationwide</span><span><b>MC#</b> 000000</span><span><b>DOT#</b> 0000000</span><span><b>24/7</b> support</span></div></div>
+
+<section><div class="wrap"><span class="tag rv">Why CH Logistics</span><h2 class="rv">Stop leaving <span class="grad">money on the road</span></h2>
+<div class="two"><div class="card bad rv"><h3>Without a dispatcher</h3><ul><li>Hours lost searching load boards</li><li>Low rates and empty miles</li><li>Chasing brokers and late payments</li></ul></div>
+<div class="card good feat rv"><h3>With CH Logistics</h3><ul><li>Best-paying loads found for you</li><li>Rates negotiated on every load</li><li>Paperwork, invoicing and follow-up done</li></ul></div></div></div></section>
+
+<section id="services" class="alt"><div class="wrap"><span class="tag rv">Services</span><h2 class="rv">Everything a carrier <span class="grad">needs</span></h2><p class="sub rv">One team that finds, books and follows up, so you keep driving.</p>
+<div class="grid">
+<div class="card rv"><div class="ic">📦</div><h3>Load Sourcing</h3><p>Top load boards and direct broker relationships.</p></div>
+<div class="card rv"><div class="ic">💰</div><h3>Rate Negotiation</h3><p>We push for the highest rate on every load.</p></div>
+<div class="card rv"><div class="ic">🤝</div><h3>Broker Communication</h3><p>Calls, emails and check-calls handled for you.</p></div>
+<div class="card rv"><div class="ic">🧾</div><h3>Invoicing & Payments</h3><p>Fast invoicing and payment follow-up.</p></div>
+<div class="card rv"><div class="ic">⏱️</div><h3>Detention & TONU</h3><p>We chase every claim you are owed.</p></div>
+<div class="card rv"><div class="ic">🛟</div><h3>24/7 Support</h3><p>A real dispatcher, day or night.</p></div></div></div></section>
+
+<section id="how"><div class="wrap"><span class="tag rv">How it works</span><h2 class="rv">Three steps, <span class="grad">one smooth road</span></h2>
+<div class="strip rv" id="strip"><div class="road"></div>
+<div class="stop" style="left:18%"><i></i>Sign up</div><div class="stop" style="left:50%"><i></i>We find loads</div><div class="stop" style="left:82%"><i></i>You get paid</div>
+<svg id="st" viewBox="0 0 740 202"><use href="#tk"/></svg></div>
+<div class="grid"><div class="card rv"><div class="num">01</div><h3>Sign up</h3><p>Tell us your MC, truck type and preferred lanes.</p></div>
+<div class="card rv"><div class="num">02</div><h3>We find and book</h3><p>We source loads, negotiate and book the best ones.</p></div>
+<div class="card rv"><div class="num">03</div><h3>Drive and get paid</h3><p>You drive. We handle paperwork and payment.</p></div></div></div></section>
+
+<section class="alt center"><div class="wrap"><span class="tag rv">Results</span><h2 class="rv">Numbers that <span class="grad">keep wheels turning</span></h2>
+<div class="grid"><div class="card rv"><div class="big grad" data-n="12500" data-s="+">0</div><p>Loads booked</p></div><div class="card rv"><div class="big grad" data-n="18" data-s="%">0</div><p>Average rate improvement</p></div><div class="card rv"><div class="big grad" data-n="240" data-s="+">0</div><p>Happy carriers</p></div></div>
+<p style="color:var(--mut);font-size:13px;margin-top:14px">Placeholder numbers: replace with your real stats.</p></div></section>
+
+<section id="pricing"><div class="wrap"><span class="tag rv">Pricing</span><h2 class="rv">Clear pricing. <span class="grad">No hidden fees.</span></h2>
+<div class="grid"><div class="card rv"><h3>Owner-Operator</h3><div class="price">6%<small> / load</small></div><ul><li>✓ Load sourcing</li><li>✓ Rate negotiation</li><li>✓ Paperwork and invoicing</li></ul><a class="btn" href="#contact">Choose</a></div>
+<div class="card feat rv"><h3>Small Fleet (2-5)</h3><div class="price">5%<small> / load</small></div><ul><li>✓ Everything in Owner-Operator</li><li>✓ Dedicated dispatcher</li><li>✓ Detention and TONU claims</li></ul><a class="btn p" href="#contact">Choose</a></div>
+<div class="card rv"><h3>Growing Fleet (6+)</h3><div class="price">Custom</div><ul><li>✓ Volume pricing</li><li>✓ Lane planning</li><li>✓ Weekly reports</li></ul><a class="btn" href="#contact">Talk to us</a></div></div></div></section>
+
+<section class="alt"><div class="wrap"><span class="tag rv">Testimonials</span><h2 class="rv">Drivers who <span class="grad">trust us</span></h2>
+<div class="grid"><div class="card rv"><p class="q">“My rates went up and I stopped worrying about paperwork.”</p><div class="who">— Owner-operator, Atlanta GA (sample)</div></div>
+<div class="card rv"><p class="q">“Always picks up at 2 a.m. Real dispatchers, real help.”</p><div class="who">— Small fleet, Macon GA (sample)</div></div>
+<div class="card rv"><p class="q">“Fewer empty miles and faster payments. Easy decision.”</p><div class="who">— Reefer carrier, Savannah GA (sample)</div></div></div></div></section>
+
+<section id="faq"><div class="wrap" style="max-width:780px"><span class="tag rv">FAQ</span><h2 class="rv">Common <span class="grad">questions</span></h2>
+<details><summary>Is there a long-term contract?</summary><p>No. You can stop any time (edit to match your policy).</p></details>
+<details><summary>How fast do I get paid?</summary><p>Based on broker terms, with fast follow-up from us.</p></details>
+<details><summary>Which trucks and lanes?</summary><p>Dry van, reefer, flatbed, box truck and power only across the USA.</p></details>
+<details><summary>What do I need to start?</summary><p>Active MC authority, insurance and a W-9.</p></details></div></section>
+
+<section id="contact" class="alt"><div class="wrap"><div class="box rv"><div><span class="tag">Get started</span><h2>Ready for <span class="grad">better loads?</span></h2><p class="sub">Fill the form and we will call you within 15 minutes.</p><p style="margin-top:22px;color:var(--mut)">📞 (000) 000-0000<br>✉️ info@chlogistics.com<br>📍 Atlanta, GA</p></div>
+<form id="fm"><input required placeholder="Full name"><input required type="tel" placeholder="Phone"><input type="email" placeholder="Email"><input placeholder="MC Number"><select><option>Dry Van</option><option>Reefer</option><option>Flatbed</option><option>Box Truck</option><option>Power Only</option></select><input placeholder="Preferred lanes (e.g. GA to FL)"><button class="btn p" type="submit">Request Free Consultation</button><p id="ok">Thanks! We will call you soon.</p></form></div></div></section>
+
+<footer><div class="wrap"><span>© 2026 CH Logistics · Atlanta, Georgia</span><span>Privacy Policy · Terms · Instagram · Facebook</span></div></footer>
+<div class="float"><a href="https://wa.me/10000000000" style="background:#25d366" aria-label="WhatsApp">💬</a><a href="tel:+10000000000" style="background:var(--ac)" aria-label="Call">📞</a></div>
+
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;e.target.classList.add('in');
+const c=e.target.querySelector('[data-n]');if(c&&!c.d){c.d=1;const t=+c.dataset.n,s=c.dataset.s,st=performance.now();
+(function f(n){const p=Math.min((n-st)/1600,1);c.textContent=Math.round(t*(1-Math.pow(1-p,3))).toLocaleString()+s;if(p<1)requestAnimationFrame(f)})(st)}}),{threshold:.15});
+document.querySelectorAll('.rv').forEach(e=>io.observe(e));
+// truck drives across the "how it works" road as you scroll
+const strip=document.getElementById('strip'),st=document.getElementById('st');
+function drive(){const r=strip.getBoundingClientRect(),vh=innerHeight,p=Math.min(Math.max((vh-r.top)/(vh*.8+r.height),0),1),w=strip.clientWidth,tw=st.clientWidth;
+st.style.transform=`translateX(${-tw+p*(w+tw*.4)}px)`}
+addEventListener('scroll',drive,{passive:true});addEventListener('resize',drive);drive();
+document.getElementById('fm').onsubmit=e=>{e.preventDefault();document.getElementById('ok').style.display='block';e.target.reset()}; // replace with n8n / Sheets webhook
+</script></body></html>
